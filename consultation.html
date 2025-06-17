@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- 文档头部区域：包含元数据、标题、样式表等非可视内容 -->
+    <head>
+        <!-- 设置文档字符编码为UTF-8，确保多语言字符正确显示 -->
+        <meta charset="UTF-8">
+        <!-- 
+        视口设置：控制移动端显示效果
+        width=device-width - 宽度等于设备宽度
+        initial-scale=1.0 - 初始缩放比例为100% 
+        -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- 设置浏览器标签页显示的标题 -->
+        <title>我的简历——更多咨询</title>
+        <!-- 
+        链接外部CSS样式表 
+        href="./css/index.css" - 指向当前目录下css文件夹中的index.css文件
+        rel="stylesheet" - 定义关联文档为样式表
+        -->
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <!-- 网页主体部分，包括页眉区、导航区、两个内容区和页脚区 -->
+    <body>
+        <!-- 可以通过左边的大纲视图查看文档结构，选择按位置查看 -->
+        <!-- 页眉区header -->
+        <header>
+            <!-- 每个区都有一个公共类inner,用来放置内容，内容区宽度固定，居中 -->
+            <div class="inner"></div>
+        </header>
+        <!-- end of header -->
+        
+        <!-- 导航区nav -->
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li><a href="index.html"><input type="button" value="首页"></a></li>
+                    <li><a href="growth.html"><input type="button" value="成长经历"></a></li>
+                    <li><a href="hobby.html"><input type="button" value="兴趣爱好"></a></li>
+                    <li><a href="consultation.html"><input type="button" value="更多咨询"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of nav -->
+        
+        <!--标签区，用于提示用户所处页面-->
+        <div id="label">
+            <a>
+                <img src="images/label4.png">
+            </a>
+        </div>
+        <!--end of label-->
+
+        <!--主内容区，其中创建了表单-->
+        <div class="inner">
+            <div id="total">
+                <h1>想要了解更多，填写以下内容进行更详细的咨询吧!</h1>
+                <form action="index.html" method="post"> 
+                <div class="tableRow">
+                    <p>
+                      选择您的身份:
+                    </p> 
+                    <p>
+                        <select>
+                          <option >学生</option>
+                          <option>教师</option>
+                          <option>社会工作者</option>
+                          <option>其他</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p> 性别: </p>
+                    <p>
+                        <input type="radio" name="beantype">男<br>
+                        <input type="radio" name="beantype" checked> 
+                        女
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p> 您的理想咨询时间（分钟）: </p>
+                    <p> <input type="number" min="1" max="30"> </p>
+                </div>
+                <div class="tableRow label">
+                    <p> 您有空的时间: </p>
+                    <p> <input type="date" name="date"> </p>
+                </div>
+                <div class="tableRow">
+                    <p class="heading"> 请您填写以下个人信息 </p>
+                    <p></p>
+                </div>
+                <div class="tableRow">
+                    <p> 姓名: </p>
+                    <p> <input type="text" required> </p>
+                </div>
+                <div class="tableRow">
+                    <p> 地址: </p>
+                    <p> <input type="text" required> </p>
+                </div>
+                <div class="tableRow">
+                    <p> 邮箱: </p>
+                    <p> <input type="text" required> </p>
+                </div>
+                <div class="tableRow">
+                    <p> 电话: </p>
+                    <p> <input type="text" required> </p>
+                </div>
+                <div class="tableRow">
+                    <p> 想要咨询的具体问题: </p>
+                    <p>
+                        <textarea></textarea>
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p></p>
+                    <p> <input type="submit" value="提交"> </p>
+                </div>
+                </form>
+                <section id="consul"></section>
+            </div>
+        </div>
+
+        <!-- 页脚区footer -->
+        <footer id="bottom1">
+            <p>2025.6.11</p>
+            <p>电话：1899574****</p>
+            <p>邮箱：huahang123321@qq.com</p>
+            <p>未经允许请勿外传网站内任何个人信息</p>
+        </footer>
+        <!-- end of footer -->
+    
+    </body>
+    <!-- end of body -->
+</html>

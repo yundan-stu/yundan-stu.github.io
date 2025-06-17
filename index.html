@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- 文档头部区域：包含元数据、标题、样式表等非可视内容 -->
+    <head>
+        <!-- 设置文档字符编码为UTF-8，确保多语言字符正确显示 -->
+        <meta charset="UTF-8">
+        <!-- 
+        视口设置：控制移动端显示效果
+        width=device-width - 宽度等于设备宽度
+        initial-scale=1.0 - 初始缩放比例为100% 
+        -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- 设置浏览器标签页显示的标题 -->
+        <title>我的简历——首页</title>
+        <!-- 
+        链接外部CSS样式表 
+        href="./css/index.css" - 指向当前目录下css文件夹中的index.css文件
+        rel="stylesheet" - 定义关联文档为样式表
+        -->
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <!-- 网页主体部分，包括页眉区、导航区、两个内容区和页脚区 -->
+    <body>
+        <!-- 可以通过左边的大纲视图查看文档结构，选择按位置查看 -->
+        <!-- 页眉区header -->
+        <header>
+            <!-- 每个区都有一个公共类inner,用来放置内容，内容区宽度固定，居中 -->
+            <div class="inner"></div>
+        </header>
+        <!-- end of header -->
+         
+        <!-- 导航区nav -->
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li><a href="index.html"><input type="button" value="首页"></a></li>
+                    <li><a href="growth.html"><input type="button" value="成长经历"></a></li>
+                    <li><a href="hobby.html"><input type="button" value="兴趣爱好"></a></li>
+                    <li><a href="consultation.html"><input type="button" value="更多咨询"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of nav -->
+        
+        <!-- 1号内容区container_1,内部又分为两个部分cont_1_1和cont_1_2，其中cont_1_2中设有表格——个人简历表 -->
+        <div id="container_1">
+            <div class="inner">
+                <div id="cont_1_1">
+                    <section id="photo_1"></section>
+                </div>
+                <div id="cont_1_2">
+                    <table>
+                        <caption>个人简历</caption>
+                        <tr class="cellcolor">
+                            <td class="center">姓名</td>
+                            <td class="center">华航</th>
+                            <td class="center">性别</th>
+                            <td class="center">男</th>
+                            <td class="center">出生年月</th>
+                            <td class="center">2005.09.06</th>
+                        </tr>
+                        <tr>
+                            <td class="center">身份证号码</td>
+                            <td class="center">42****20050906****</td>
+                            <td class="center">民族</td>
+                            <td class="center">汉族</td>
+                            <td class="center">政治面貌</td>
+                            <td class="center">共青团员</td>
+                        </tr>
+                        <tr class="cellcolor">
+                            <td class="center">婚姻状况</td>
+                            <td class="center">无</th>
+                            <td class="center">健康状况</th>
+                            <td class="center">良好</th>
+                            <td class="center">身高</th>
+                            <td class="center">172</th>
+                        </tr>
+                        <tr>
+                            <td class="center">户籍</td>
+                            <td class="center">湖北</td>
+                            <td class="center">所学专业</td>
+                            <td class="center">信息管理与信息系统</td>
+                            <td class="center">学历</td>
+                            <td class="center">本科</td>
+                        </tr>
+                        <tr class="cellcolor">
+                            <td class="center">学校名称</td>
+                            <td class="center">中南财经政法大学</th>
+                            <td class="center">学院名称</th>
+                            <td class="center">信息工程学院</th>
+                            <td class="center">学号</th>
+                            <td class="center">202321130258</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- end of container_1 -->
+        
+        <!-- 2号内容区container_2,内部又分为三个部分con_2_1、con_2_2和con_2_3 -->
+        <div id="container_2">
+            <div class="inner">
+                <div id="con_2_1">
+                    <section id="photo_2"></section>
+                    <section id="photo_3"></section>
+                    <div id="con_2_1_1">
+                        <section id="box">
+                            <p>
+                                中南财经政法大学，简称中南大，
+                                位于湖北省武汉市，
+                                是教育部直属的全国重点大学，
+                                是国家“211工程”和“985工程优势学科创新平台”重点建设高校，
+                                国家“双一流”建设高校，教育部、财政部和湖北省共建高校。
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div id="con_2_2">
+                    <section id="photo_4"></section>
+                    <section id="honor">
+                        <p>1.国家励志奖学金</p>
+                        <p>2.中国大学生计算机设计大赛微课与AI辅助赛道省级二等奖</p>
+                        <p>3.中国建设银行湖北分行2023年外部创意征集活动三等奖</p>
+                        <p>4.中南财经政法大学优秀大学生艺术团团员</p>
+                        <p>5.中南财经政法大学“中南杯”校级二等奖</p>
+                    </section>
+                </div>
+                <div id="con_2_3">
+                    <section id="photo_5"></section>
+                    <section id="sayings">
+                        <p>行动是治愈恐惧的良药，而犹豫拖延将不断滋养恐惧。</p>
+                        <p>人生没有彩排，每一天都是现场直播。</p>
+                        <p>没有比人更高的山，没有比脚更长的路。</p>
+                        <p>贪婪之心是贫穷的根源，知足常乐才是真正的财富之道。</p>
+                        <p>经历过烈火的考验，泥土也能拥有坚硬的身躯。</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- end of container_2 -->
+        
+        <!--标签区，主要用于提示用户所处的页面-->
+        <div id="label">
+            <a>
+                <img src="images/label1.png">
+            </a>
+        </div>
+        <!--end of label-->
+
+        <!-- 页脚区footer -->
+        <footer>
+            <p>2025.6.11</p>
+            <p>电话：1899574****</p>
+            <p>邮箱：huahang123321@qq.com</p>
+            <p>未经允许请勿外传网站内任何个人信息</p>
+        </footer>
+        <!-- end of footer -->
+    
+    </body>
+    <!-- end of body -->
+</html>
